@@ -1,0 +1,12 @@
+<%= link_to "編集", edit_income_path(@income) %>
+<%= link_to "収入科目一覧へ戻る",  incomes_path %>
+<table>
+  <tr>
+    <th>名称</th>
+    <td><%= @income.name %></td>
+  </tr>
+  <tr>
+    <th>詳細</th>
+    <td><%= @income.description %></td>
+  </tr>
+</table>

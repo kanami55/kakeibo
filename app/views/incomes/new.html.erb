@@ -1,6 +1,6 @@
 <div class="container">
   <h2>収入科目登録</h2>
-  <%= form_with @incomes, local: true do |f| %>
-  <%%>
-  <%= f.submit%>
+  <%= form_with @incomes, local: true do |form| %>
+  <%= render "incomes/form", form: form %>
+  <div><%= form.submit %></div>
 </div>
