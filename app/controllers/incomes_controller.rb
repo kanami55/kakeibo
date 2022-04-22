@@ -30,7 +30,7 @@ class IncomesController < ApplicationController
     @income = Income.find(params[:id])
     @income.update(income_params)
     if @income.save
-      redirect_to
+      redirect_to incomes_path
       flash[:notice] = "収入科目を登録しました。"
     else
       render new_income_path
