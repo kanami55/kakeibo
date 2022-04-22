@@ -1,0 +1,6 @@
+<%= link_to "固定科目一覧に戻る", fixedcosts_path %>
+<h2>固定費科目登録</h2>
+  <%= form_with model: @fixedcost, local: true do |form| %>
+  <%= render "fixedcosts/form", form: form %>]
+  <div><%= form.submit "登録" %></div>
+<% end %>
