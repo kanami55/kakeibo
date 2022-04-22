@@ -16,8 +16,10 @@
         <tr>
           <td><%= income.name %></td>
           <td><%= income.description %></td>
-          <td><%= link_to "編集", edit_income_path(income) %></td>
-          <td><%= link_to "削除", method: :delete, data: { confirm: "本当に削除しますか？"} %></td>
+          <td>
+            <%= link_to "編集", edit_income_path(income) %>
+            <%= link_to "削除", income, method: :delete, data: { confirm: "本当に削除しますか？"} %>
+          </td>
         </tr>
         <% end %>
       </tbody>
